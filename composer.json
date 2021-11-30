@@ -1,0 +1,17 @@
+{
+    "name": "safa/vending-machine",
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Safa Balki",
+            "email": "safa_balki@hotmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
