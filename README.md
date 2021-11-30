@@ -6,13 +6,25 @@ This app is designed to take or put items from the beverage vending machine. Som
 
 * The occupancy of the beverage vending machine should be checked while putting the product in the beverage vending machine.
 
-# Usage
+# Installation
 
+Clone project.
+
+```bash
+git clone https://github.com/safabalki/vending-machine.git
+```
+
+Open the project directory.
+```bash
+cd vending-machine
+```
 Install dependencies:
 
 ```bash
 composer install
 ```
+
+# Usage
 
 To use the bindings, use Composer's autoload:
 
@@ -26,7 +38,6 @@ $beverageVendingMachine->openDoor();
 $beverageVendingMachine->pushItem();
 $beverageVendingMachine->closeDoor();
 
-$beverageVendingMachine = new beverageVendingMachine();
 $beverageVendingMachine->openDoor();
 $beverageVendingMachine->pullItem();
 $beverageVendingMachine->closeDoor();
