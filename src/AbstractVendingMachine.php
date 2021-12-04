@@ -3,58 +3,58 @@
 abstract class AbstractVendingMachine
 {
 	/**
-     * About vending machine messages
-     *
-     * @var array
-     */
+	* About vending machine messages
+	*
+	* @var array
+	*/
 	const MESSAGES = ["OPEN_MESSAGE"   => "The Vending machine door is open.", 
-					  "CLOSE_MESSAGE"  => "The Vending machine door is close.",
-					  "EMPTY"     	   => "The Vending machine is empty.", 
-					  "FULL"  		   => "The Vending machine is full.", 
-				  	  "HALF_FULL" 	   => "The Vending machine is half full."];
+			  "CLOSE_MESSAGE"  => "The Vending machine door is close.",
+			  "EMPTY"     	   => "The Vending machine is empty.", 
+			  "FULL"  	   => "The Vending machine is full.", 
+			  "HALF_FULL" 	   => "The Vending machine is half full."];
 
 	/**
-     * About vending machine statutes
-     *
-     * @var array
-     */
-	const STATUSES = ["EMPTY"     => 0, 
-					  "FULL"  	  => 1, 
-				      "HALF_FULL" => 2];
+	* About vending machine statutes
+	*
+	* @var array
+	*/
+	const STATUSES = ["EMPTY"	=> 0, 
+			  "FULL"	=> 1, 
+			  "HALF_FULL" 	=> 2];
 
 	/**
-     * The status codes
-     *
-     * @var int
-     */
+	* The status codes
+	*
+	* @var int
+	*/
 	protected $status = self::STATUSES["EMPTY"];
 
 	/**
-     * The vending machine door status.
-     *
-     * @var boolean
-     */
+	* The vending machine door status.
+	*
+	* @var boolean
+	*/
 	protected $isOpen = false;
 
 	/**
-     * Number of item on each vending machine row
-     *
-     * @var int
-     */
+	* Number of item on each vending machine row
+	*
+	* @var int
+	*/
 	protected $itemCountPerRow;
 
 	/**
-     * The row count.
-     *
-     * @var int
-     */
+	* The row count.
+	*
+	* @var int
+	*/
 	protected $rowCount;
 
 	/**
-     * Number of item on the row.
-     *
-     * @var int
-     */
+	* Number of item on the row.
+	*
+	* @var int
+	*/
 	private $itemCount;
 
 	public function getItemCount()
@@ -68,10 +68,10 @@ abstract class AbstractVendingMachine
 	}
 
 	/**
-     * Open the door vending machine
-     *
-     * @return boolean
-     */
+	* Open the door vending machine
+	*
+	* @return boolean
+	*/
 	public function openDoor()
 	{
 		$this->isOpen = true;
@@ -79,10 +79,10 @@ abstract class AbstractVendingMachine
 	}
 
 	/**
-     * Close the door vending machine
-     *
-     * @return boolean
-     */
+	* Close the door vending machine
+	*
+	* @return boolean
+	*/
 	public function closeDoor()
 	{
 		$this->isOpen = false;
